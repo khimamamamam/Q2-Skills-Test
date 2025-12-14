@@ -89,6 +89,31 @@
         cursor: pointer;
 }
 
+#submit1{
+    width: 150px;
+  }
+  
+  .custom-submit {
+    background-color: #d8b4fe;
+    border: none;
+    color: white;
+    transition: 0.3s ease-in-out;
+    border-radius: 10px;
+}
+
+.custom-submit:hover {
+    background-color: #c396ff;  
+    box-shadow: 0 0 10px #e5c8ff;
+    transform: scale(1.05);
+}
+.glass-box {
+    background: rgba(255, 255, 255, 0.35);
+    backdrop-filter: blur(8px);
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(216, 180, 254, 0.4);
+    padding: 20px;
+}
+
     </style>
 </head>
 <body>
@@ -126,16 +151,75 @@
 </nav>
 
 <br><br>
-<div class="container bg-light"style="border-radius: 15px;">
-    <p class="lead fw-bold text-info"><kbd>Contact Us</kbd></p>
+<div class="container glass-box">
+  <div class="container bg-light"style="border-radius: 15px;">
+  <p class="lead fw-bold text-info text-center" style="font-size: 35px;">
+    <kbd>Contact Us</kbd>
+  </p>
     <br>
     <blockquote>
-        <span class="lead">Lorem Ipsum</span>  dolor sit amet, consectetur adipiscing elit. Curabitur at pretium sem. Mauris vitae rhoncus urna, in porta arcu. Proin faucibus neque nec nunc scelerisque bibendum. In a dolor et libero molestie tempus. Ut varius mauris turpis, ut vestibulum magna dapibus quis. In non nisi at erat imperdiet sodales. Quisque lacinia, tortor eget semper imperdiet, nisl mi vulputate turpis, vel finibus dui mi et tortor.
+      <div class="container mt-3">
+        <form>
+          <div class="row">
+            <div class="col">
+              <label for="name">First Name</label>
+              <input type="text" class="form-control" id="text"
+              placeholder="Enter FN" name="first anme">
+            </div>
+            <div class="col">
+              <label for="email">Last Name</label>
+              <input type="text" class="form-control" id="text"
+              placeholder="Enter FN" name="last name">
+            </div>
+        </div>
+        <br><br>
+        <div class="row">
+          <div class="col">
+        <label for="sel1" class="form-label">Grade Level</label>
+<select class="form-select" id="sel1" name="sellist1">
+        <option>Junior Casa</option>
+        <option>Junior Advanced Casa</option>
+        <option>Advanced Casa</option>
+        <option>Grade 1</option>
+        <option>Grade 2</option>
+        <option>Grade 3</option>
+        <option>Grade 4</option>
+        <option>Grade 5</option>
+        <option>Grade 6</option>
+        <option>Grade 7</option>
+        <option>Grade 8</option>
+        <option>Grade 9</option>
+        <option>Grade 10</option>
+        <option>Grade 11</option>
+        <option>Grade 12</option>
+</select>
+<br>
+<div class="mb-3">
+  <label for="pwd">Contact Number</label>
+  <input type="number" class="form-control"
+  id="pwd" placeholder="****-***-****" name="nmbr">
+  </div>
+</div>
 
-        Mauris posuere augue nulla, id varius ipsum iaculis ut. Nullam consectetur molestie ante, at sagittis arcu dictum eget. Vestibulum sit amet euismod elit. Duis ultrices sagittis tellus, ac facilisis urna interdum at. Donec blandit lacinia libero, id commodo lectus mollis eget. Etiam magna ex, sodales in arcu ullamcorper, cursus fringilla dolor. Pellentesque blandit ex urna, eu eleifend odio condimentum at. In non vulputate metus. Suspendisse accumsan purus in est scelerisque, in tincidunt tellus venenatis. Curabitur sit amet dui sodales turpis sagittis maximus et ut velit.
-        
-        <br><br>      
+<div class="col">
+    <label for="sel1" class="form-label">Gender</label>
+    <select class="form-select" id="sel1" name="sellist1">
+      <option>Female</option>
+      <option>Male</option>
+</select>
+</div>
+</div>
+<br>
+<div class="container mt-3">
+        <form>
+      <div class="d-grid mx-auto d-block" id="submit1">
+        <button type="submit" class="btn custom-submit">Submit</button>
+      </div>
+      </form>
+      </div>
+      <br><br>     
     </blockquote>
+</div>
 </div>
 
 </body>
